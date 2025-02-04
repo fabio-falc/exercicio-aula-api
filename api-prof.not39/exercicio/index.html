@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script type="module" defer src="script.js"></script>
+</head>
+<body>
+  <div id="profile-search">
+    <div>
+      <label for="campo-nome">Digite o nome do seu perfil do github:</label>
+      <input type="text" name="nome" id="campo-nome">
+    </div>
+    <button id="botao-procurar-perfil">PROCURAR PERFIL</button>
+  </div>
+
+  <p id="message" class="hidden"></p>
+  
+  <header class="hidden">
+    <div>
+      <h1></h1>
+      <img src="" alt="">
+    </div>
+
+    <a href="" target="_blank" aria-label="Ir para o github">
+      <span aria-hidden="true">Github</span>
+      <img src="github-icon.svg" alt="" aria-hidden="true">
+    </a>
+  </header>
+  
+  <main class="hidden">
+    <section id="README">
+
+    </section>
+
+    <section id="projects">
+    </section>
+  </main>
+</body>
+</html>

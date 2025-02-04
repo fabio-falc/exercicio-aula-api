@@ -1,0 +1,155 @@
+*:not(:where(#README) > *) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brown: #3d444d;
+  --beige: #161b22;
+}
+
+body {
+  background-color: var(--beige);
+  font-family: 'Handjet', sans-serif;
+  color: #FFF;
+  padding: 1rem;
+}
+
+#profile-search {
+  max-width: 1120px;
+  margin: auto;
+  padding: 1rem;
+
+  display: flex;
+  gap: 0.5rem;
+
+  border: 4px solid var(--brown);
+
+  margin-bottom: 1rem;
+}
+
+#profile-search > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  flex: 1;
+}
+
+#profile-search > div > label {
+  font-size: 1.5rem;
+}
+
+#profile-search > div > input {
+  width: 100%;
+
+  background-color: transparent;
+
+  border: 4px solid var(--brown);
+  color: #FFF;
+  padding: 0.25rem;
+}
+
+#profile-search > div > input:focus {
+  outline: none;
+}
+
+#profile-search > button {
+  border: 4px solid var(--brown);
+  background-color: var(--brown);
+  color: var(--beige);
+  font-weight: 700;
+  padding: 1rem;
+
+  cursor: pointer;
+}
+
+#profile-search > button:hover {
+  background-color: transparent;
+  color: var(--brown);
+}
+
+#profile-search > button:active {
+  background-color: #FFF;
+}
+
+#message {
+  text-align: center;
+  font-size: 3rem;
+}
+
+header {
+  max-width: 1120px;
+  margin: auto;
+  padding: 1rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 4px solid var(--brown);
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header > div > img {
+  order: -1;
+
+  width: 8rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+}
+
+header a {
+  border: 4px solid var(--brown);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: #FFF;
+}
+
+header > a > img {
+  width: 2rem;
+}
+
+
+main {
+  max-width: 1120px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#README {
+  border: 4px solid var(--brown);
+  padding: 1rem;
+}
+
+#projects {
+  margin-top: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project {
+  border: 4px solid var(--brown);
+  padding: 0.5rem 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.danger {
+  color: red;
+}
